@@ -8,7 +8,7 @@ describe("Tests de la classe Item", () => {
     expect(item.getDateCreation()).toBeInstanceOf(Date);
   });
 
-  test("Création d'un item avec nom et contenu vide donc invalide", () => {
+  test("Création d'un item avec nom et contenu vide donc invalide", () => { 
     expect(() => {
       new Item("Tâche 1", "");
     }).toThrow("Le contenu doit être une chaîne de caractères non vide.");
