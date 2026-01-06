@@ -11,7 +11,7 @@ describe("Tests de la classe Item", () => {
   test("Création d'un item avec nom et contenu vide donc invalide", () => { 
     expect(() => {
       new Item("Tâche 1", "");
-    }).toThrow("Le contenu doit être une chaîne de caractères non vide.");
+    }).toThrow("Le contenu doit être une chaîne de cactères non vide.");
   });
 
   test("Création d'un item avec nom et contenu qui n'est pas un string donc invalide", () => {
